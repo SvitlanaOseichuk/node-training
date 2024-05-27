@@ -5,7 +5,7 @@ import Book from "../models/book.js"
 async function getBooks(req, res, next) {
      
     try {
-        const books = await Book.find({ favorite: true, year: 2080});
+        const books = await Book.find();
 
         res.send(books);
     } catch (error) {
