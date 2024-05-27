@@ -1,4 +1,4 @@
-import "dotenv/config"
+// import "dotenv/config"  ьшняємо у пакеджесонг
 
 import express from "express";
 
