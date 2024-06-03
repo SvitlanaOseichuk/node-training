@@ -1,12 +1,15 @@
 // import "dotenv/config"  ьшняємо у пакеджесонг
+import path from "node:path";
 
 import express from "express";
 
-import routes from "./routes/index.js"
+import routes from "./routes/index.js";
 
 import "./db.js";
 
 const app = express();
+
+app.use("/avatars", express.static(path.resolve("public/avatars")));
 
 app.use("/api", routes);
 
